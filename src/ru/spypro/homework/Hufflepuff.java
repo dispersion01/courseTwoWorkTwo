@@ -39,9 +39,32 @@ public class Hufflepuff extends Hogwarts {
     @Override
     public String toString() {
         return "Hufflepuff{" +
-                "hardworking=" + hardworking +
-                ", loyal=" + loyal +
-                ", honest=" + honest +
+                "Трудолюбие " + hardworking +
+                ", Верность " + loyal +
+                ", Честность " + honest +
                 '}';
+    }
+    public void twoStudentsFormOneClass(Hufflepuff student) {
+        if (this.hardworking > student.getHardworking()) {
+            System.out.println(this.getName() + " трудолюбивие чем " + student.getName());
+        } else if (this.hardworking < student.getHardworking()) {
+            System.out.println(this.getName() + " менее трудолюбивый чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " трудолюбие на равне с " + student.getName());
+        }
+        if (this.loyal > student.getLoyal()) {
+            System.out.println(this.getName() + " вернее чем " + student.getName());
+        } else if (this.loyal < student.getLoyal()) {
+            System.out.println(this.getName() + " менее верный чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " верность на равне с " + student.getName());
+        }
+        if (this.honest > student.getHonest()) {
+            System.out.println(this.getName() + " благороднее чем " + student.getName());
+        } else if (this.honest < student.getHonest()) {
+            System.out.println(this.getName() + " менее благородный чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " благородство на равне с " + student.getName());
+        }
     }
 }

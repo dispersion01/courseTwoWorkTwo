@@ -52,6 +52,36 @@ public class Ravenclaw extends Hogwarts{
                 "Ум " + smart +
                 ", Мудрость " + wise +
                 ", Остроумие " + witty +
-                ", креативность " + creative ;
+                ", Креативность " + creative ;
+    }
+    public void twoStudentsFormOneClass(Ravenclaw student) {
+        if (this.smart > student.getSmart()) {
+            System.out.println(this.getName() + " умнее чем " + student.getName());
+        } else if (this.smart < student.getSmart()) {
+            System.out.println(this.getName() + " глупее чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " ум на равне с " + student.getName());
+        }
+        if (this.wise > student.getWise()) {
+            System.out.println(this.getName() + " удрее чем " + student.getName());
+        } else if (this.wise < student.getWise()) {
+            System.out.println(this.getName() + " менее мудрый чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " мудрость на равне с " + student.getName());
+        }
+        if (this.witty > student.getWitty()) {
+            System.out.println(this.getName() + " остроумие чем " + student.getName());
+        } else if (this.witty < student.getWitty()) {
+            System.out.println(this.getName() + " менее остроумный чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " остроумие на равне с " + student.getName());
+        }
+        if (this.creative > student.getCreative()) {
+            System.out.println(this.getName() + " креативнее чем " + student.getName());
+        } else if (this.creative < student.getCreative()) {
+            System.out.println(this.getName() + " менее креативный чем" + student.getName());
+        } else {
+            System.out.println(this.getName() + " креативность на равне с " + student.getName());
+        }
     }
 }

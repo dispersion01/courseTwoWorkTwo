@@ -54,4 +54,14 @@ public class Hogwarts {
                 "power=" + power+
         '}';
     }
+
+    public void twoStudentsFormDifferentClass(Hogwarts student) { //метод сравнения студентов из разных классов
+        if (this.power > student.getPower()) {
+            System.out.println(this.name + " сильнее чем " + student.getName());
+        } else if (this.power == student.getPower()) {
+            System.out.println(this.name + " одинаков по силе " + student.getName());
+        } else {
+            System.out.println(this.name + " слабее чем " + student.getName());
+        }
+    }
 }
