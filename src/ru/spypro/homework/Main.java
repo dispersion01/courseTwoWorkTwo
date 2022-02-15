@@ -34,24 +34,13 @@ public class Main {
         System.out.println("Когтевранцы");
         printRavenclaw(ravenclaw);
         System.out.println();
-/*
-        System.out.println("Лучший из Грифиндора");
-        betterOfGryffindor(gryffindor);
+        gryffindor[0].twoStudentsFormOneClass(gryffindor[1]);
         System.out.println();
-        System.out.println("Лучший из Слизерина");
-        betterOfSlytherin(slytherin);
+        ravenclaw[0].twoStudentsFormOneClass(ravenclaw[1]);
         System.out.println();
-        System.out.println("Лучший из Когтевран");
-        betterOfRavenclaw(ravenclaw);
+        slytherin[0].twoStudentsFormOneClass(slytherin[1]);
         System.out.println();
-        System.out.println("Сравнение Грифиндора с другими студентами");
-        System.out.println();
-        System.out.println("Сравнение Слизерина с другими студентами");
-        System.out.println();
-        System.out.println("Сравнение Когтевран с другими студентами");
-*/
-//        gryffindor.twoStudentsFormOneClass(gryffindor); ошибка вызова метода из класса Gryffindor
-
+        hogwarts[0].twoStudentsFormDifferentClass(hogwarts[1]);
     }
 
     public static void printGryffindor(Gryffindor[] gryffindor) {
@@ -78,68 +67,6 @@ public class Main {
         }
     }
 
-/* сравнение объектов внутри одного и того же класса
-   вместо этого сравнения добавила метод twoStudentsFormOneClass в каждый их 4х классов/факультетов
-    public static void betterOfGryffindor(Gryffindor[] gryffindor) {
-        for (int i = 0; i < gryffindor.length; i++) {
-            for (int j = 0; j < gryffindor.length; j++) {
-                if (j < i) continue;
-                if (gryffindor[j].equals(gryffindor[i])) {
-                    System.out.println(gryffindor[i]);
-                }
-            }
-        }
-    }
-
-    public static void betterOfSlytherin(Slytherin[] slytherin) {
-        for (int i = 0; i < slytherin.length; i++) {
-            for (int j = 0; j < slytherin.length; j++) {
-                if (j < i) continue;
-                if (slytherin[j].equals(slytherin[i])) {
-                    System.out.println(slytherin[i]);
-                }
-            }
-        }
-    }
-
-    public static void betterOfRavenclaw(Ravenclaw[] ravenclaw) {
-        for (int i = 0; i < ravenclaw.length; i++) {
-            for (int j = 0; j < ravenclaw.length; j++) {
-                if (j < i) continue;
-                if (ravenclaw[j].equals(ravenclaw[i])) {
-                    System.out.println(ravenclaw[i]);
-                }
-            }
-        }
-    }
-*/
-
-/* сравнение каждого из 4х классов/факультетов сравниваются со всеми студентами содержащимися в Хогвартс
-    вместо этих методов добавила метод twoStudentsFormDifferentClass в классе Hogwarts
-    public static void bestGryffindor(Hogwarts students, Gryffindor gryffindorStudent) {
-        if (students.getPower() > gryffindorStudent.getPower()) {
-            System.out.println(students.getName() + " " + "умнее чем" + " " + gryffindorStudent.getName());
-        } else {
-            System.out.println(gryffindorStudent.getName() + " " + "умнее чем" + " " + students.getName());
-        }
-    }
-
-    public static void bestOfSlytherin(Hogwarts students, Slytherin slytherinStudent) {
-        if (students.getPower() > slytherinStudent.getPower()) {
-            System.out.println(students.getName() + " " + "умнее чем" + " " + slytherinStudent.getName());
-        } else {
-            System.out.println(slytherinStudent.getName() + " " + "умнее чем" + " " + students.getName());
-        }
-    }
-
-    public static void bestOfRavenclaw(Hogwarts students, Ravenclaw ravenclawStudent) {
-        if (students.getPower() > ravenclawStudent.getPower()) {
-            System.out.println(students.getName() + " " + "умнее чем" + " " + ravenclawStudent.getName());
-        } else {
-            System.out.println(ravenclawStudent.getName() + " " + "умнее чем" + " " + students.getName());
-        }
-    }
-*/
 
 
 }

@@ -63,14 +63,14 @@ public class Gryffindor extends Hogwarts{
      if (this.nobility > student.getNobility()) {
          System.out.println(this.getName() + " благороднее чем " + student.getName());
      } else if (this.nobility < student.getNobility()) {
-         System.out.println(this.getName() + " менее благородный чем" + student.getName());
+         System.out.println(this.getName() + " менее благородный чем " + student.getName());
      } else {
          System.out.println(this.getName() + " благородство на равне с " + student.getName());
      }
         if (this.honor > student.getHonor()) {
             System.out.println(this.getName() + " доблестнее чем " + student.getName());
         } else if (this.honor < student.getHonor()) {
-            System.out.println(this.getName() + " менее доблестный чем" + student.getName());
+            System.out.println(this.getName() + " менее доблестный чем " + student.getName());
         } else {
             System.out.println(this.getName() + " честь на равне с " + student.getName());
         }
